@@ -27,10 +27,40 @@ html{
 
 body{
     background-color: var(--main-color);
-    height: 200vh;
 }
 
-/* HEADER SECTION */
+section{
+    padding: 3.5rem 7%;
+}
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 2rem 3.75rem;
+    border-radius: 30px;
+    font-size: 1.7rem;
+    color: #fff;
+    background-color: var(--black-color);
+}
+
+::-webkit-scrollbar{
+    height: 0.5rem;
+    width: 1rem;
+}
+
+::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: greenyellow;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-color: rgb(211, 255, 144);
+}
+
+/* ------------------------------------------HEADER SECTION */
 
 .header{
     display: flex;
@@ -67,4 +97,34 @@ body{
     font-size: 2.5rem;
     margin-left: 2rem;
     background-color: transparent;
+    cursor: pointer;
+}
+/* ------------------------------------------HEADER SECTION */
+
+/* ------------------------------------------HOME SECTION */
+.home{
+    min-height: 100vh;
+    background: url(./image/pizza-with-turkey-bacon-orange-and-cashew-nuts-2022-03-29-07-33-54-utc.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: -134px;
+    display: flex;
+    align-items: center;
+}
+
+.home .content{
+    max-width: 60rem;
+}
+
+.home .content h3{
+    font-size: 6rem;
+    color: #fff;
+}
+
+.home .content p{
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 1.8;
+    padding: 1rem 0;
+    color: #fff;
 }
