@@ -33,6 +33,11 @@ section{
     padding: 3.5rem 7%;
 }
 
+img{
+    width: 100%;
+    object-fit: cover;
+}
+
 .btn{
     margin-top: 1rem;
     display: inline-block;
@@ -41,6 +46,22 @@ section{
     font-size: 1.7rem;
     color: #fff;
     background-color: var(--black-color);
+}
+
+.btn:hover{
+    opacity: 0.8;
+}
+
+.heading{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 4rem;
+    margin-bottom: 3.5rem;
+    border-bottom: 0.1rem solid #fff;
+}
+
+.heading span{
+    text-transform: uppercase;
 }
 
 ::-webkit-scrollbar{
@@ -101,7 +122,9 @@ section{
 }
 /* ------------------------------------------HEADER SECTION */
 
+
 /* ------------------------------------------HOME SECTION */
+
 .home{
     min-height: 100vh;
     background: url(./image/pizza-with-turkey-bacon-orange-and-cashew-nuts-2022-03-29-07-33-54-utc.jpg) no-repeat;
@@ -127,4 +150,47 @@ section{
     line-height: 1.8;
     padding: 1rem 0;
     color: #fff;
+}
+
+/* ------------------------------------------HOME SECTION */
+
+/* ------------------------------------------MENU SECTION */
+.menu .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem,1fr));
+    gap: 1.5rem;
+}
+
+/* img etiket genel olarak düzenlendi */
+
+
+
+.menu .box-container .box{
+    padding: 3rem;
+    background-color: #fff;
+    border-radius: 3rem;
+    min-height: 60rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.menu .box-container .menu-category{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+.menu .box-container .box h3{
+    font-size: 3rem;
+    padding: 1rem 0;
+}
+
+.menu .box-container .box .price{
+    font-size: 2.5rem;
+    padding: 0.5rem 0;
+}
+
+.menu .box-container .box .price span{
+    text-decoration: line-through;
+    font-size: 1.5rem;
 }
