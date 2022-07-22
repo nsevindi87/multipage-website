@@ -38,6 +38,11 @@ img{
     object-fit: cover;
 }
 
+a{
+    text-decoration: none;
+    color: var(--black-color);
+}
+
 .btn{
     margin-top: 1rem;
     display: inline-block;
@@ -62,11 +67,13 @@ img{
 
 .heading span{
     text-transform: uppercase;
+    color: var(--black-color);
 }
 
 ::-webkit-scrollbar{
     height: 0.5rem;
     width: 1rem;
+    background-color: rgb(7, 126, 182);
 }
 
 ::-webkit-scrollbar-track{
@@ -74,6 +81,7 @@ img{
 }
 
 ::-webkit-scrollbar-thumb{
+    border-radius: 3rem;
     background-color: greenyellow;
 }
 
@@ -194,3 +202,78 @@ img{
     text-decoration: line-through;
     font-size: 1.5rem;
 }
+/* ------------------------------------------MENU SECTION */
+
+
+/* ------------------------------------------PRODUCTS SECTION */
+.products .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.products .box-container .box{
+    min-height: 60rem;
+    background-color: #fff;
+    border-radius: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 3rem;
+    position: relative;
+}
+
+.products .box-container .box .box-head{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    z-index: 10;
+}
+.products .box-container .box .box-head .title{
+    font-size: 1.4rem;
+}
+
+.products .box-container .box-head .name{
+    font-size: 4rem;
+    font-weight: bold;
+    text-align: start;
+    overflow-wrap: anywhere;
+}
+
+.products .box-container .box .box-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.products .box-container .box .box-bottom .info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.products .box-container .box-bottom .info .price{
+    font-size: 3rem;
+}
+.products .box-container .box-bottom .info .amount{
+    font-size: 1.5rem;
+}
+
+.products .box-container  .box-bottom .product-btn a{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 6.5rem;
+    height: 6.5rem;
+    border: 0.2rem solid var(--main-color);
+}
+
+.products .box-container  .box-bottom .product-btn a i{
+    font-size: 1.6rem;
+    color: var(--main-color);
+}
+
+/* ------------------------------------------PRODUCTS SECTION */
+/* ------------------------------------------ABOUT US SECTION */
+
+/* ------------------------------------------ABOUT US SECTION */
