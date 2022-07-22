@@ -19,18 +19,20 @@
 }
 
 html{
-    font-size: 62.5%;
+    font-size: 50%;
     overflow-x: hidden;
-    scroll-margin-top: 9rem;
+    
     scroll-behavior: smooth;
 }
 
 body{
     background-color: var(--main-color);
+
 }
 
 section{
     padding: 3.5rem 7%;
+    scroll-margin-top: 9rem;
 }
 
 img{
@@ -87,6 +89,14 @@ a{
     justify-content: space-between;
     text-align: center;
     border: var(--border);
+}
+
+.search-input{
+    font-size: 1.6rem;
+    color: var(--black-color);
+    padding: 1rem;
+    text-transform: none;
+    border-radius: 3rem;
 }
 
 ::-webkit-scrollbar{
@@ -263,6 +273,10 @@ a{
 .about .row .image{
      flex: 1 1 45rem;
 }
+.about .row .image img{
+    height: 50rem;
+    object-fit: contain;
+}
 /* img  genel olarak düzenlendi */
 
 .about .row{
@@ -289,6 +303,11 @@ a{
 /* ------------------------------------------ABOUT US SECTION */
 /* ------------------------------------------REVIEW SECTION */
 /* img .box-container ve .box  genel olarak düzenlendi */
+
+.review .box-container .box img{
+    height: 20rem;
+    object-fit: contain ;
+}
 .review .box-container .box p{
     font-size: 1.5rem;
     line-height: 1.8;
@@ -405,3 +424,76 @@ a{
     padding: 1rem 0;
 }
 /* ------------------------------------------BLOG SECTION */
+
+/* ------------------------------------------FOOTER SECTION */
+.footer {
+    background-color: var(--black-color);
+    text-align: center;
+}
+
+.footer .search{
+    display: flex;
+    justify-content: center;
+}
+
+.footer .search .search-input{
+    width: 30rem;
+}
+
+.footer .search .btn-primary{
+    background-color: var(--main-color);
+    padding: 1rem 2rem;
+    margin-left: 1rem;
+}
+
+.footer .share{
+    padding: 2rem 0;
+}
+
+.footer .share a{
+    color: #fff;
+    font-size: 2rem;
+    width: 5rem;
+    height: 5rem;
+    line-height: 5rem;
+    border: var(--border);
+    border-radius: 50%;
+    margin: 0.3rem;
+}
+
+
+.footer .share a:hover{
+    background-color: var(--main-color);
+}
+
+.footer .links{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.footer .links a{
+    background-color: var(--main-color);
+     padding: 0.7rem 2rem;
+     color: #fff;
+     border: var(--border);
+}
+
+.footer .links a:hover{
+    background-color: var(--black-color);
+    opacity: 0.7;
+    
+}
+
+.footer .credit{
+    font-size: 2rem;
+    color: #fff;
+    font-weight: 300;
+    padding-top: 1.5rem;
+}
+
+.footer .credit span{
+    color: var(--main-color);
+}
+/* ------------------------------------------FOOTER SECTION */
