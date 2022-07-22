@@ -70,6 +70,24 @@ a{
     color: var(--black-color);
 }
 
+.box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.box{
+    padding: 3rem;
+    background-color: #fff;
+    border-radius: 3rem 2rem;
+    min-height: 60rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    border: var(--border);
+}
+
 ::-webkit-scrollbar{
     height: 0.5rem;
     width: 1rem;
@@ -163,25 +181,7 @@ a{
 /* ------------------------------------------HOME SECTION */
 
 /* ------------------------------------------MENU SECTION */
-.menu .box-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem,1fr));
-    gap: 1.5rem;
-}
-
-/* img etiket genel olarak düzenlendi */
-
-
-
-.menu .box-container .box{
-    padding: 3rem;
-    background-color: #fff;
-    border-radius: 3rem;
-    min-height: 60rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
+/* img .box-container ve .box  genel olarak düzenlendi */
 
 .menu .box-container .menu-category{
     font-size: 1.2rem;
@@ -206,23 +206,6 @@ a{
 
 
 /* ------------------------------------------PRODUCTS SECTION */
-.products .box-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    gap: 1.5rem;
-}
-
-.products .box-container .box{
-    min-height: 60rem;
-    background-color: #fff;
-    border-radius: 3rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 3rem;
-    position: relative;
-}
-
 .products .box-container .box .box-head{
     display: flex;
     flex-direction: column;
@@ -279,7 +262,7 @@ a{
 .about .container .image{
      flex: 1 1 45rem;
 }
-/* img 100% yazmistik zaten */
+/* img  genel olarak düzenlendi */
 
 .about .container{
     display: flex;
@@ -303,3 +286,38 @@ a{
     line-height: 1.8;
 }
 /* ------------------------------------------ABOUT US SECTION */
+/* ------------------------------------------REVIEW SECTION */
+/* img .box-container ve .box  genel olarak düzenlendi */
+.review .box-container .box p{
+    font-size: 1.5rem;
+    line-height: 1.8;
+    padding: 2rem 0;
+}
+
+.review .box-container .box .user{
+    height: 7rem;
+    object-fit: contain;
+}
+
+.review .box-container .box .h3{
+    padding: 1rem 0;
+    font-size: 2rem;
+    color: var(--main-color);
+}
+
+.review .box-container .box .stars{
+    font-size: 1.5rem;
+    color: gold;
+}
+/* ------------------------------------------REVIEW SECTION */
+
+/* ------------------------------------------CONTACT SECTION */
+
+
+
+
+
+
+
+
+/* ------------------------------------------CONTACT SECTION */
