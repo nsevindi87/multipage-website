@@ -274,6 +274,32 @@ a{
 }
 
 /* ------------------------------------------PRODUCTS SECTION */
-/* ------------------------------------------ABOUT US SECTION */
 
+/* ------------------------------------------ABOUT US SECTION */
+.about .container .image{
+     flex: 1 1 45rem;
+}
+/* img 100% yazmistik zaten */
+
+.about .container{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 2rem;
+}
+
+.about .container .content{
+    flex: 1 1 45rem;
+}
+
+.about .container .content h3{
+    font-size: 3rem;
+    color: #fff;
+}
+
+.about .container .content p{
+    font-size: 1.6rem;
+    color: #ccc;
+    padding: 1rem 0;
+    line-height: 1.8;
+}
 /* ------------------------------------------ABOUT US SECTION */
