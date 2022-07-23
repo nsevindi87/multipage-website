@@ -19,7 +19,7 @@
 }
 
 html{
-    font-size: 50%;
+    font-size: 62.5%;
     overflow-x: hidden;
     
     scroll-behavior: smooth;
@@ -133,6 +133,34 @@ a{
     top: 0;
 }
 
+.header .search-form{
+    position: absolute;
+    top: 115%;
+    right: 7%;
+    background-color: #fff;
+    width: 50rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    border-radius: 3rem;
+    box-shadow: 0px 0px 25px 2px rgb(0 0 0 / 75%);
+    transform: scaleY(0);
+}
+
+.header .search-form.active{
+    transform: scaleY(1);
+}
+
+.header .search-form i{
+    cursor: pointer;
+    font-size: 2.2rem;
+    margin-right: 1.5rem;
+    color: var(--black-color);
+}
+.header .search-form input{
+    width: 100%;
+}
+
 .header .logo img{
     height: 9rem;
 }
@@ -156,6 +184,10 @@ a{
     margin-left: 2rem;
     background-color: transparent;
     cursor: pointer;
+}
+
+#menu-btn{
+    display: none;
 }
 /* ------------------------------------------HEADER SECTION */
 
@@ -500,12 +532,48 @@ a{
 
 /* ------------------------------------------RESPONSIVE SECTION */
 @media (max-width: 991px){
-    body{
-        display: none;
+    html{
+        font-size: 55%;
+    }
+    .header{
+        padding: 1.5rem 2rem;
+    }
+    .header .logo img{
+        height: 7rem;
+    }
+
+    section{
+        padding: 2rem;
+    }
+    .products .box-container .box .box-head .name{
+        font-size: 3.4rem;
     }
 }
 
-
+@media (max-width: 768px){
+    #menu-btn{
+        display: inline-block;
+    }
+    .header .navbar{
+        position: absolute;
+        top: 100%;
+        background-color: #fff;
+        height: calc(100vh - 9rem);
+        width: 30rem;
+        box-shadow: 0px 20px 14px 0px rgb(0 0 0 / 75%);
+        right: -100%;
+    }
+    .header .navbar.active{
+        right: 3rem;
+    }
+    .header .navbar a{
+        color: var(--black-color);
+        display: block;
+        margin: 1.5rem;
+        padding: 0.5rem;
+        font-size: 2rem;
+    }
+}
 
 
 
