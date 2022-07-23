@@ -604,7 +604,7 @@ a{
 }
 
 @media (max-width: 768px){
-    #menu-btn{
+    .header #menu-btn{
         display: inline-block;
     }
     .header .navbar{
@@ -628,6 +628,11 @@ a{
     }
 }
 
+@media (max-width: 768px){
+    html{
+        font-size: 50%;
+    }
+}
 
 
 
