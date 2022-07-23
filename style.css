@@ -186,6 +186,15 @@ a{
     cursor: pointer;
 }
 
+.header .cart-items-container{
+    position: absolute;
+    top: 95%;
+    height: calc(100vh - 9rem);
+    width: 35rem;
+    background-color: #fff;
+    box-shadow: 0px 20px 14px 0px rgba(0 0 0 / 75%);
+}
+
 #menu-btn{
     display: none;
 }
