@@ -37,7 +37,7 @@ section{
 
 img{
     width: 100%;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 a{
@@ -193,9 +193,53 @@ a{
     width: 35rem;
     background-color: #fff;
     box-shadow: 0px 20px 14px 0px rgba(0 0 0 / 75%);
+    right: -100%;
 }
 
-#menu-btn{
+.header .cart-items-container.active{
+    right: 3rem;
+}
+
+.header .cart-items-container .cart-item{
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.5rem;
+}
+
+.header .cart-items-container .cart-item:hover{
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+}
+.header .cart-items-container .cart-item img{
+    height: 7rem;
+    width: auto;
+}
+.header .cart-items-container .cart-item .content h3{
+    font-size: 2rem;
+    color: var(--black-color);
+    padding: 0.5rem;
+}
+
+.header .cart-items-container .cart-item .content .price{
+    font-size: 1.5rem;
+    color: var(--black-color);
+}
+.header .cart-items-container .cart-item .fa-times{
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    font-size: 2rem;
+    cursor: pointer;
+    color: var(--black-color);
+}
+.header .cart-items-container .btn{
+    width: 100%;
+    text-align: center;
+    border-radius: unset;
+}
+
+.header #menu-btn{
     display: none;
 }
 /* ------------------------------------------HEADER SECTION */
