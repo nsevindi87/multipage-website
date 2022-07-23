@@ -497,3 +497,20 @@ a{
     color: var(--main-color);
 }
 /* ------------------------------------------FOOTER SECTION */
+
+/* ------------------------------------------RESPONSIVE SECTION */
+@media (max-width: 991px){
+    body{
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------RESPONSIVE SECTION */
